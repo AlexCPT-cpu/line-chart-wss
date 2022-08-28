@@ -5,12 +5,6 @@ function App() {
   const [cryptoData, setCryptoData] = useState(0);
   const [isLoading, setIsLoading] = useState(true);
   const [latestPrice, setLatestPrice] = useState(0);
-  
-  
-   async componentDidMount() {
-    // when react first renders then it called componentDidMount()
-    fetchData();
-  }
 
   useEffect(() => {
     fetchData().then((chartData) => {
@@ -130,12 +124,6 @@ function App() {
   return (
     <>
       <div className="px-3 mt-1">
-        {isLoading ? (
-          <h6 className="value animate__animated animate__flash animate__slow text-center text-primary">
-            {" "}
-            loading ...
-          </h6>
-        ) : (
           <>
             <h2
               id="last-price"
@@ -145,7 +133,6 @@ function App() {
             </h2>
             <div id="chart" className="p-0 m-0"></div>
           </>
-        )}
       </div>
       <div style={{ margin: "0 auto", textAlign: "center" }}>
         <div
