@@ -9,7 +9,7 @@ function App() {
   
    async componentDidMount() {
     // when react first renders then it called componentDidMount()
-    fetchData
+    fetchData();
   }
 
   useEffect(() => {
