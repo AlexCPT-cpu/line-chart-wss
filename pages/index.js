@@ -21,7 +21,7 @@ function App() {
           parseFloat(chartData.price[chartData.price.length - 1]).toFixed(2)
         );
       });
-    }, 1000 * 30);
+    }, 1000);
     return () => {
       clearInterval(timerID);
     };
