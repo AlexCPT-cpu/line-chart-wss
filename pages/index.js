@@ -5,6 +5,12 @@ function App() {
   const [cryptoData, setCryptoData] = useState(0);
   const [isLoading, setIsLoading] = useState(true);
   const [latestPrice, setLatestPrice] = useState(0);
+  
+  
+   async componentDidMount() {
+    // when react first renders then it called componentDidMount()
+    fetchData
+  }
 
   useEffect(() => {
     fetchData().then((chartData) => {
