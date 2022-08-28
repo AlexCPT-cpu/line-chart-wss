@@ -1,4 +1,4 @@
-import TradeViewChart from "react-crypto-chart";
+/*import TradeViewChart from "react-crypto-chart";
 
 export default function Chart() {
   return (
@@ -50,3 +50,4 @@ export default function Chart() {
     </div>
   );
 }
+*/
